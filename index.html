@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aaron Thompson - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Aaron Thompson
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          athompson@memail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2017/08/27/21/42/man-2687628_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Aaron Thompson! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer student devoted to learn as much as I can about fullstack coding to enhance learning.
+            I am learning all that I can to become a valued member of a coding team. With my previous skills added to my new skillset,
+            I believe there is nothing I cannot achieve.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/flash.png"/>
+            <h6>Flash</h6>
+            <p>1 year experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+          </div> 
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Excel Assistant</h3>
+            <ul>
+              <li>Developed a Excel assistant powered by AI to better assist the user search large datasets with better results.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Cyber Security Enhancement</h3>
+            <ul>
+              <li>Developed and deployed a passive Cyber Security assistant to fully enhance an already functial Cyber Security Suite. The assistant passively looks for threats against the mainframe.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Pet Shop Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new local Pet Shop. With the website up and running, the Pet Shop saw an increase of 10% foot traffic and 15% internet traff increase.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Aaron was an extreemly skilled asset to our development team. 
+          He is a fast learner, catching up to speed with the rest of his team in a minimal amount of time.
+          His skillset, mixed with the skills of the other team members allowed them to achieve the set deadline ahead of time.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Aaron's attention to detail provided us a much needed outside view of our project. 
+          Having his fresh input on our almost completed project showed us the minor errors within our code. 
+          This new look saved us time and money as the errors caught would have delayed the deployment of our project.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working along side Aaron was complex. While we did not always see 'eye to eye', he was understanding and level headed.\
+          When there were differences of opinon, Aaron would always try to see the isse from both sides of the arguement, then settling on the best outcome for the project.
+          Having someone who is willing to have difficult conversations with was a breath of fresh air.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
